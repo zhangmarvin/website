@@ -1,0 +1,25 @@
+body {
+    background: url(./lightpaperfibers.png);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0A67A3;
+    margin-top: 10%;
+    margin-left: 15%;
+    max-width: 45%;
+}
+
+h1 {
+    font-size:40px;
+    font-weight: 700;
+    color: #4F10AD;
+}
+
+#link {
+    text-decoration: none;
+    color: #4F10AD;
+}
+
+#link:hover {
+    color: #FFBC00;
+}
