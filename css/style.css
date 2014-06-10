@@ -6,13 +6,20 @@ body {
     color: #0A67A3;
     margin-top: 10%;
     margin-left: 15%;
-    max-width: 45%;
+    max-width: 60%;
 }
 
 h1 {
-    font-size:40px;
+    font-size: 40px;
     font-weight: 700;
     color: #4F10AD;
+}
+
+img {
+    float: left;
+    margin: 30px;
+    padding: 1px;
+    border: 1px solid #021a40;
 }
 
 #link {
