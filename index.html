@@ -9,21 +9,117 @@
     <link rel="shortcut icon" href="misc/favicon.ico">
 </head>
 <body>
-    <img src="misc/me.jpg"/>
-    <h1>marvin zhang</h1>
-    <p>
-    i'm marvin, and i'm a third year computer science student at the university
-    of california, berkeley.
-    </p>
-    <p>
-    i'm still working hard to get this website up and running, but in the
-    meantime, you can <a id="link" href="mailto:zhangmarvin@berkeley.edu">shoot
-    me an email</a> or check out my:
-    </p>
-    <p>
-        <a id="link" href="https://www.linkedin.com/in/marvinzhang">linkedin </a>/
-        <a id="link" href="https://www.github.com/zhangmarvin">github </a>/
-        <a id="link" href="misc/resume.pdf">résumé</a>
-    </p>
+    <div id="intro">
+        <table style="padding-right:30px;">
+            <tr>
+                <td>
+                <img class="me" src="misc/me.jpg"/>
+                </td>
+                <td>
+                <h1>marvin zhang</h1>
+                <div class="links">
+                <a id="link" href="#about">about&nbsp;me</a>&nbsp;/&nbsp;<a id="link" href="#teaching">teaching</a>&nbsp;/&nbsp;<a id="link" href="#projects">projects</a>&nbsp;/&nbsp;<a id="link" href="#other">other</a>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div id="about">
+        <h2>about me</h2>
+        <p>
+        i'm marvin, and i'm a third year computer science student at the University of California, Berkeley. 
+        </p>
+        <p>
+        most of my time is spent on CS in some form or another. in addition to classes, i am an undergraduate research
+        apprentice in Professor <a id="link" href="http://www.cs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>'s 
+        <a id="link" href="http://rll.berkeley.edu/outreach/">Robot Learning Lab</a>, and i work primarily with PhD
+        student <a id="link" href="http://www.eecs.berkeley.edu/~joschu/">John Schulman</a>. i am also an undergraduate
+        student instructor (UGSI, or TA) for <a id="link" href="http://www-inst.eecs.berkeley.edu/~cs61a/">CS 61A</a>,
+        the introductory computer science course at Berkeley.
+        </p>
+        <p>
+        apart from school and work, i spend a lot of my time listening to, sharing, and teaching music. i currently
+        serve as the president of <a id="link" href="http://www.musicconnectucb.com/">The Music Connection</a>, a UC
+        Berkeley club that provides free music tutoring to children in the Berkeley community. i also play violin in the 
+        <a id="link" href="http://orchestra.berkeley.edu/">UC Berkeley Symphony Orchestra</a>, though i'm taking this
+        semester off.  my other passions include running (every now and then), binge watching tv shows, and every type
+        of asian food.
+        </p>
+        <p>
+        if you'd like to contact me, <a id="link" href="mailto:zhangmarvin@berkeley.edu">shoot me an email</a> at
+        [zhangmarvin&nbsp;at&nbsp;berkeley&nbsp;dot&nbsp;edu].
+        </p>
+    </div>
+    <div id="teaching">
+        <h2>teaching</h2>
+        <table>
+            <tr>
+                <td>
+                <a href="http://inst.eecs.berkeley.edu/~cs61a/"><img src="misc/61a.png"/></a>
+                </td>
+                <td>
+                <a id="link" href="http://inst.eecs.berkeley.edu/~cs61a/"><h4>UGSI, CS 61A (Structure and Interpretation
+                        of Computer Programs)</h4></a>
+                CS 61A is the introductory computer science course at UC Berkeley, and teaches many fundamental ideas
+                including functional programming, data abstraction, and object-oriented programming. I taught this
+                course last semester (<a id="link" href="http://inst.eecs.berkeley.edu/~cs61a/sp14/">Spring 2014</a>),
+                and have returned to teach again this semester.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href="http://tmc.berkeley.edu/"><img src="misc/tmc.png"/></a>
+                </td>
+                <td>
+                <a id="link" href="http://tmc.berkeley.edu/"><h4>President, The Music Connection</h4></a>
+                The Music Connection (TMC) is a service club at UC Berkeley that provides free supplementary music
+                tutoring to K-12 students in the Berkeley Unified School District. Tutors in TMC help run various
+                programs, including in-class, after-school, and private tutoring. For more information, visit our
+                website at <a id="link" href="http://tmc.berkeley.edu/">tmc.berkeley.edu</a>.
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div id="projects">
+        <h2>projects</h2>
+        <table>
+            <tr>
+                <td>
+                <a href="http://calupe.herokuapp.com/"><img src="misc/upe.png"/></a>
+                </td>
+                <td>
+                <a id="link" href="http://calupe.herokuapp.com/"><h4>UC Berkeley UPE Website</h4></a>
+                this is the (soon-to-be) new website for the UC Berkeley chapter of Upsilon Pi Epsilon, the national
+                Computer Science honor society.  as the former IT chair, i led a committee in designing and building the
+                backend of this website using Django.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href="http://ytadventure.com/"><img src="misc/yta.png"/></a>
+                </td>
+                <td>
+                <a id="link" href="http://ytadventure.com/"><h4>YouTube Adventure</h4></a>
+                this is a web app written in HTML/CSS/JS that allows you to watch an endless stream of YouTube videos
+                picked from an initial starting video. users have the option to skip videos, pick how related they'd
+                like the next video to be, and rewatch previous videos.
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p>
+        find more of my projects and contributions on <a id="link" href="https://www.github.com/zhangmarvin">github</a>.
+        </p>
+    </div>
+    <div id="other">
+        <h2>other</h2>
+        <ul>
+            <li>
+            more professional-type information can be found on my:
+            <a id="link" href="misc/resume.pdf">résumé</a>&nbsp;/&nbsp;<a id="link" href="https://www.linkedin.com/in/marvinzhang">linkedin</a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
