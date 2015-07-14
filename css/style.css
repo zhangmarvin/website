@@ -4,10 +4,18 @@ body {
     font-size: 20px;
     font-weight: 300;
     color: #0F4D92;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 5%;
     margin-left: 15%;
     max-width: 60%;
+}
+
+div.home {
+    float: left;
+}
+
+div.links {
+    float: right;
 }
 
 h1 {
@@ -18,7 +26,7 @@ h1 {
 }
 
 h2 {
-    padding-top: 70px;
+    padding-top: 20px;
     font-size: 28px;
     font-weight: 700;
     color: #4F10AD;
@@ -38,12 +46,16 @@ img.me {
     height: 200px;
 }
 
-#link {
+.link {
     text-decoration: none;
     font-weight: 400;
     color: #4F10AD;
 }
 
-#link:hover {
+.link:hover {
     color: #FFBC00;
+}
+
+td {
+    font-size: 18px;
 }
