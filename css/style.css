@@ -56,6 +56,11 @@ img.me {
     color: #FFBC00;
 }
 
+table {
+    margin-top: -2%;
+    margin-bottom: -2%;
+}
+
 td {
     font-size: 18px;
 }
