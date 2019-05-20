@@ -41,25 +41,29 @@
                     <a href="https://arxiv.org/abs/1808.09105"><img src="/misc/sol.png"/></a>
                 </td>
                 <td>
-                    <a class="link" href="https://arxiv.org/abs/1808.09105">
-                    <h4>Marvin Zhang*, Sharad Vikram*, Laura Smith, Pieter Abbeel, Matthew Johnson, Sergey Levine.
-                    <b>SOLAR: Deep Structured Latent Representations for Model-Based Reinforcement Learning.</b>
-                    <i>arXiv Preprint. arXiv 1808.09105.</i></h4>
-                    </a>
+                    <h4>Marvin Zhang*, Sharad Vikram*, Laura Smith, Pieter Abbeel, Matthew Johnson, Sergey Levine.<br>
+                    SOLAR: Deep Structured Latent Representations for Model-Based Reinforcement Learning.<br>
+                    <i>ICML 2019.</i></h4>
+                    <a class="link" href="https://arxiv.org/abs/1808.09105">paper</a>&nbsp;/&nbsp;<a class="link" href="https://sites.google.com/corp/view/icml19solar">website</a>&nbsp;/&nbsp;<a class="link" href="https://github.com/sharadmv/parasol">code</a>&nbsp;/&nbsp;<a class="link" href="https://bair.berkeley.edu/blog/2019/05/20/solar/">blog</a>
                     <p>
-                    In this paper, we develop a model-based reinforcement
-                    learning method that utilizes structured representation
-                    learning to find latent representations that are better
-                    suited to accurate local linear model fitting. We show that
-                    our method, which we call SOLAR, is similarly sample
-                    efficient to model-based methods while solving complex tasks
-                    to a comparable performance as model-free methods. We
-                    demonstrate results in several simulated domains as well as
-                    on a real Sawyer robotic arm, operating directly from only
-                    image observations in all tasks. Videos of our results are
-                    available on the
-                    <a class="link" href="https://sites.google.com/view/icml19solar">project website</a>.
-                    </p>
+                    Model-based reinforcement learning (RL) has proven to be a
+                    data efficient approach for learning control tasks but is
+                    difficult to utilize in domains with complex observations
+                    such as images. In this paper, we present a method for
+                    learning representations that are suitable for iterative
+                    model-based policy improvement, even when the underlying
+                    dynamical system has complex dynamics and image
+                    observations, in that these representations are optimized
+                    for inferring simple dynamics and cost models given data
+                    from the current policy. This enables a model-based RL
+                    method based on the linear-quadratic regulator (LQR) to be
+                    used for systems with image observations. We evaluate our
+                    approach on a range of robotics tasks, including
+                    manipulation with a real-world robotic arm directly from
+                    images. We find that our method produces substantially
+                    better final performance than other model-based RL methods
+                    while being significantly more efficient than model-free RL.
+                </p>
                 </td>
             </tr>
             <tr>
@@ -67,24 +71,29 @@
                     <a href="https://arxiv.org/abs/1703.03078"><img src="/misc/hoc.jpg"/></a>
                 </td>
                 <td>
-                    <a class="link" href="https://arxiv.org/abs/1703.03078">
-                    <h4>Yevgen Chebotar*, Karol Hausman*, Marvin Zhang*, Gaurav Sukhatme, Stefan Schaal, Sergey Levine.
-                    <b>Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning.</b>
-                    <i>ICML 2017. arXiv 1703.03078.</i></h4>
-                    </a>
+                    <h4>Yevgen Chebotar*, Karol Hausman*, Marvin Zhang*, Gaurav Sukhatme, Stefan Schaal, Sergey Levine.<br>
+                    <b>Combining Model-Based and Model-Free Updates for Trajectory-Centric Reinforcement Learning.</b><br>
+                    <i>ICML 2017.</i></h4>
+                    <a class="link" href="https://arxiv.org/abs/1703.03078">paper</a>&nbsp;/&nbsp;<a class="link" href="https://sites.google.com/site/icml17pilqr/">website</a>&nbsp;/&nbsp;<a class="link" href="https://github.com/cbfinn/gps">code</a>
                     <p>
-                    In this paper, we devise an algorithm for training
-                    time-varying linear-Gaussian controllers that combines a
-                    sample-efficient model-based method with a corrective
-                    model-free method. We show that our algorithm, which we call
-                    PILQR, retains the sample efficiency of model-based methods
-                    while suffering less from modeling errors, which we
-                    demonstrate through several simulated and real robot
-                    experiments. We also combine PILQR with guided policy search
-                    to train expressive and general deep neural network
-                    policies. A video of our experimental results is available
-                    from the
-                    <a class="link" href="https://sites.google.com/site/icml17pilqr/">project website</a>.
+                    Reinforcement learning (RL) algorithms for real-world
+                    robotic applications need a data-efficient learning process
+                    and the ability to handle complex, unknown dynamical
+                    systems. These requirements are handled well by model-based
+                    and model-free RL approaches, respectively. In this work, we
+                    aim to combine the advantages of these two types of methods
+                    in a principled manner. By focusing on time-varying
+                    linear-Gaussian policies, we enable a model-based algorithm
+                    based on the linear quadratic regulator (LQR) that can be
+                    integrated into the model-free framework of path integral
+                    policy improvement (PI2). We can further combine our method
+                    with guided policy search (GPS) to train arbitrary
+                    parameterized policies such as deep neural networks. Our
+                    simulation and real-world experiments demonstrate that this
+                    method can solve challenging manipulation tasks with
+                    comparable or better performance than model-free methods
+                    while maintaining the sample efficiency of model-based
+                    methods.
                     </p>
                 </td>
             </tr>
@@ -93,22 +102,35 @@
                     <a href="https://arxiv.org/abs/1609.09049"><img style="height:125px" src="/misc/sup.png"/></a>
                 </td>
                 <td>
-                    <a class="link" href="https://arxiv.org/abs/1609.09049">
-                    <h4>Marvin Zhang*, Xinyang Geng*, Jonathan Bruce*, Ken Caluwaerts, Massimo Vespignani, Vytas SunSpiral, Pieter Abbeel, Sergey Levine.
-                    <b>Deep Reinforcement Learning for Tensegrity Robot Locomotion.</b>
-                    <i>ICRA 2017. arXiv 1609.09049.</i></h4>
-                    </a>
+                    <h4>Marvin Zhang*, Xinyang Geng*, Jonathan Bruce*, Ken Caluwaerts, Massimo Vespignani, Vytas SunSpiral, Pieter Abbeel, Sergey Levine.<br>
+                    <b>Deep Reinforcement Learning for Tensegrity Robot Locomotion.</b><br>
+                    <i>ICRA 2017.</i></h4>
+                    <a class="link" href="https://arxiv.org/abs/1609.09049">paper</a>&nbsp;/&nbsp;<a class="link" href="http://rll.berkeley.edu/drl_tensegrity/">website</a>&nbsp;/&nbsp;<a class="link" href="https://github.com/young-geng/gps_superball_public">code</a>
                     <p>
-                    In this paper, we explore the challenges associated with
-                    learning stable and efficient periodic locomotion, and we
-                    develop novel extensions to the mirror descent guided policy
-                    search algorithm to better handle this type of domain. Our
-                    method is able to learn successful locomotion for the NASA
-                    SUPERball, a tensegrity robot with a number of properties
-                    that make it a promising candidate for future planetary
-                    exploration missions. Videos and supplementary materials are
-                    available from the
-                    <a class="link" href="http://rll.berkeley.edu/drl_tensegrity/">project website</a>.
+                    Tensegrity robots, composed of rigid rods connected by
+                    elastic cables, have a number of unique properties that make
+                    them appealing for use as planetary exploration rovers.
+                    However, control of tensegrity robots remains a difficult
+                    problem due to their unusual structures and complex
+                    dynamics. In this work, we show how locomotion gaits can be
+                    learned automatically using a novel extension of mirror
+                    descent guided policy search (MDGPS) applied to periodic
+                    locomotion movements, and we demonstrate the effectiveness
+                    of our approach on tensegrity robot locomotion. We evaluate
+                    our method with real-world and simulated experiments on the
+                    SUPERball tensegrity robot, showing that the learned
+                    policies generalize to changes in system parameters,
+                    unreliable sensor measurements, and variation in
+                    environmental conditions, including varied terrains and a
+                    range of different gravities. Our experiments demonstrate
+                    that our method not only learns fast, power-efficient
+                    feedback policies for rolling gaits, but that these policies
+                    can succeed with only the limited onboard sensing provided
+                    by SUPERball's accelerometers. We compare the learned
+                    feedback policies to learned open-loop policies and
+                    hand-engineered controllers, and demonstrate that the
+                    learned policy enables the first continuous, reliable
+                    locomotion gait for the real SUPERball robot.
                     </p>
                 </td>
             </tr>
@@ -117,49 +139,56 @@
                     <a href="http://arxiv.org/abs/1507.01273"><img src="/misc/rnn.png"/></a>
                 </td>
                 <td>
-                    <a class="link" href="http://arxiv.org/abs/1507.01273">
-                    <h4>Marvin Zhang, Zoe McCarthy, Chelsea Finn, Sergey Levine, Pieter Abbeel.
-                    <b>Learning Deep Neural Network Policies with Continuous Memory States.</b>
-                    <i>ICRA 2016. arXiv 1507.01273.</i></h4>
-                    </a>
+                    <h4>Marvin Zhang, Zoe McCarthy, Chelsea Finn, Sergey Levine, Pieter Abbeel.<br>
+                    <b>Learning Deep Neural Network Policies with Continuous Memory States.</b><br>
+                    <i>ICRA 2016.</i></h4>
+                    <a class="link" href="https://arxiv.org/abs/1507.01273">paper</a>
                     <p>
-                    In this paper, we train control policies with continuous
-                    memory states, which can be understood as a type of
-                    recurrent neural network. We show that these policies can
-                    successfully and efficiently complete several simulated
-                    tasks that either require memory or can be made easier by
-                    the use of memory. We compare our method to several other
-                    baselines, and show that our method outperforms all of these
-                    alternate approaches.
+                    Policy learning for partially observed control tasks
+                    requires policies that can remember salient information from
+                    past observations. In this paper, we present a method for
+                    learning policies with internal memory for high-dimensional,
+                    continuous systems, such as robotic manipulators. Our
+                    approach consists of augmenting the state and action space
+                    of the system with continuous-valued memory states that the
+                    policy can read from and write to. Learning general-purpose
+                    policies with this type of memory representation directly is
+                    difficult, because the policy must automatically figure out
+                    the most salient information to memorize at each time step.
+                    We show that, by decomposing this policy search problem into
+                    a trajectory optimization phase and a supervised learning
+                    phase through a method called guided policy search, we can
+                    acquire policies with effective memorization and recall
+                    strategies. Intuitively, the trajectory optimization phase
+                    chooses the values of the memory states that will make it
+                    easier for the policy to produce the right action in future
+                    states, while the supervised learning phase encourages the
+                    policy to use memorization actions to produce those memory
+                    states. We evaluate our method on tasks involving continuous
+                    control in manipulation and navigation settings, and show
+                    that our method can learn complex policies that successfully
+                    complete a range of tasks that require memory.
                     </p>
                 </td>
             </tr>
         </table>
     </div>
-    <div id="presentations">
-        <h3>presentations</h3>
-        <ul>
-            <li>
-                I presented at the
-                <a class="link" href="https://nips.cc/Conferences/2015">NIPS 2015</a>
-                <a class="link" href="http://www.thespermwhale.com/jaseweston/ram/">Reasoning, Attention, Memory (RAM)</a>
-                workshop on my work on training policies with memory.
-                My slides are available
-                <a class="link" href="http://www.thespermwhale.com/jaseweston/ram/slides/session4/ram_talk_zhang_marvin.pdf">here</a>.
-                The workshop was
-                <a class="link" href="https://www.facebook.com/photo.php?fbid=1626023934328466">packed to the brim</a>!
-            </li>
-        </ul>
-    </div>
     <div id="software">
         <h3>software</h3>
         <ul>
             <li>
-                <a class="link" href="http://rll.berkeley.edu/gps/">GPS</a> is a
+                <a class="link" href="https://github.com/sharadmv/parasol">SOLAR</a>
+                is the open-source implementation of the SOLAR algorithm,
+		developed by myself,
+		<a class="link" href="http://www.sharadvikram.com/">Sharad Vikram</a>,
+                and Laura Smith.
+	    </li>
+        </ul>
+        <ul>
+            <li>
+                <a class="link" href="https://github.com/cbfinn/gps">GPS</a> is a
                 standard, open-source implementation of the guided policy search
-                framework, developed by myself and several colleagues. The goal
-                of this project is to allow other researchers to understand,
-                use, and extend guided policy search in their own research.
+                framework, developed by myself and several colleagues.
             </li>
         </ul>
     </div>
