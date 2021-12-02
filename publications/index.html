@@ -26,8 +26,89 @@
         </div>
     </div>
     <br>
+    <h2>preprints</h2>
+    <table>
+        <tr>
+            <td>
+                <br>
+                <a href="https://arxiv.org/abs/2110.09506"><img src="/misc/mem.png"/></a>
+            </td>
+            <td>
+                <h4>Marvin Zhang, Sergey Levine, Chelsea Finn.<br>
+                MEMO: Test Time Robustness via Adaptation and Augmentation.<br>
+                </h4>
+                <a class="link" href="https://arxiv.org/abs/2110.09506">paper</a>
+                <p>
+                While deep neural networks can attain good accuracy on
+                in-distribution test points, many applications require
+                robustness even in the face of unexpected perturbations in the
+                input, changes in the domain, or other sources of distribution
+                shift. We study the problem of test time robustification, i.e.,
+                using the test input to improve model robustness. Recent prior
+                works have proposed methods for test time adaptation, however,
+                they each introduce additional assumptions, such as access to
+                multiple test points, that prevent widespread adoption. In this
+                work, we aim to study and devise methods that make no
+                assumptions about the model training process and are broadly
+                applicable at test time. We propose a simple approach that can
+                be used in any test setting where the model is probabilistic and
+                adaptable: when presented with a test example, perform different
+                data augmentations on the data point, and then adapt (all of)
+                the model parameters by minimizing the entropy of the model's
+                average, or marginal, output distribution across the
+                augmentations. Intuitively, this objective encourages the model
+                to make the same prediction across different augmentations, thus
+                enforcing the invariances encoded in these augmentations, while
+                also maintaining confidence in its predictions. In our
+                experiments, we evaluate two baseline ResNet models, two robust
+                ResNet-50 models, and a robust vision transformer model, and we
+                demonstrate that this approach achieves accuracy gains of 1-8%
+                over standard model evaluation and also generally outperforms
+                prior augmentation and adaptation strategies. For the setting in
+                which only one test point is available, we achieve
+                state-of-the-art results on the ImageNet-C, ImageNet-R, and,
+                among ResNet-50 models, ImageNet-A distribution shift
+                benchmarks.
+                </p>
+            </td>
+        </tr>
+    </table>
     <h2>publications</h2>
     <table>
+        <tr>
+            <td>
+                <br>
+                <a href="https://arxiv.org/abs/2007.02931"><img src="/misc/arm.png"/></a>
+            </td>
+            <td>
+                <h4>Marvin Zhang*, Henrik Marklund*, Nikita Dhawan*, Abhishek Gupta, Sergey Levine, Chelsea Finn.<br>
+                Adaptive Risk Minimization: Learning to Adapt to Domain Shift.<br>
+                <i>NeurIPS 2021.</i></h4>
+                <a class="link" href="https://arxiv.org/abs/2007.02931">paper</a>&nbsp;/&nbsp;<a class="link" href="https://sites.google.com/view/adaptive-risk-minimization">website</a>&nbsp;/&nbsp;<a class="link" href="https://github.com/henrikmarklund/arm">code</a>
+                <p>
+                A fundamental assumption of most machine learning algorithms is
+                that the training and test data are drawn from the same
+                underlying distribution. However, this assumption is violated in
+                almost all practical applications: machine learning systems are
+                regularly tested under distribution shift, due to changing
+                temporal correlations, atypical end users, or other factors. In
+                this work, we consider the problem setting of domain
+                generalization, where the training data are structured into
+                domains and there may be multiple test time shifts,
+                corresponding to new domains or domain distributions. Most prior
+                methods aim to learn a single robust model or invariant feature
+                space that performs well on all domains. In contrast, we aim to
+                learn models that adapt at test time to domain shift using
+                unlabeled test points. Our primary contribution is to introduce
+                the framework of adaptive risk minimization (ARM), in which
+                models are directly optimized for effective adaptation to shift
+                by learning to adapt on the training domains. Compared to prior
+                methods for robustness, invariance, and adaptation, ARM methods
+                provide performance gains of 1-4% test accuracy on a number of
+                image classification problems exhibiting domain shift.
+                </p>
+            </td>
+        </tr>
         <tr>
             <td>
                 <br>
@@ -42,24 +123,24 @@
                 Distribution shifts -- where the training distribution differs
                 from the test distribution -- can substantially degrade the
                 accuracy of machine learning (ML) systems deployed in the wild.
-                Despite their ubiquity, these real-world distribution shifts are
-                under-represented in the datasets widely used in the ML
-                community today. To address this gap, we present WILDS, a
-                curated collection of 8 benchmark datasets that reflect a
-                diverse range of distribution shifts which naturally arise in
-                real-world applications, such as shifts across hospitals for
-                tumor identification; across camera traps for wildlife
-                monitoring; and across time and location in satellite imaging
-                and poverty mapping. On each dataset, we show that standard
-                training results in substantially lower out-of-distribution than
-                in-distribution performance, and that this gap remains even with
-                models trained by existing methods for handling distribution
-                shifts. This underscores the need for new training methods that
-                produce models which are more robust to the types of
-                distribution shifts that arise in practice. To facilitate method
-                development, we provide an open-source package that automates
-                dataset loading, contains default model architectures and
-                hyperparameters, and standardizes evaluations.
+                Despite their ubiquity in the real-world deployments, these
+                distribution shifts are under-represented in the datasets widely
+                used in the ML community today. To address this gap, we present
+                WILDS, a curated benchmark of 10 datasets reflecting a diverse
+                range of distribution shifts that naturally arise in real-world
+                applications, such as shifts across hospitals for tumor
+                identification; across camera traps for wildlife monitoring; and
+                across time and location in satellite imaging and poverty
+                mapping. On each dataset, we show that standard training yields
+                substantially lower out-of-distribution than in-distribution
+                performance. This gap remains even with models trained by
+                existing methods for tackling distribution shifts, underscoring
+                the need for new methods for training models that are more
+                robust to the types of distribution shifts that arise in
+                practice. To facilitate method development, we provide an
+                open-source package that automates dataset loading, contains
+                default model architectures and hyperparameters, and
+                standardizes evaluations. 
                 </p>
             </td>
         </tr>
